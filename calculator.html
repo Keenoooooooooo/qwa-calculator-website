@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QWA Calculator</title>
+    <link rel="stylesheet" href="calculator.css" class="css">
+</head> 
+<body>
+    <div class="page-heading">
+        <h1>MAPUA UNIVERSITY</h1>
+    </div>
+    <div class="table-wrapper">
+        <table id="myTable">
+            <thead class="table-heading">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Credits</th>
+                    <th>Final Grade</th>
+                    <th>Numeric Grade</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr>
+                    <td class="coursecode" contenteditable="true"><div class="cell-content"></div></td>
+                    <td class="placeholder" contenteditable="true"><div class="cell-content"></div></td>
+                    <td class="placeholder" contenteditable="true"><div class="cell-content"></div></td>
+                    <td class="placeholder" contenteditable="true"><div class="cell-content"></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="add-row-container" onclick="addRow()">Add Course</button>
+    <button class="remove-row-container"  onclick="deleteLastRow()">Delete Last Row</button>
+    <button class="calculate-button" onclick="credits(1,3)">⚡ CALCULATE </button>
+
+    <div class="resultWrapper">
+        <h1 class="qwa-text">Your QWA is:</h1>
+        <div>
+            <p class="sum" id="sumResult"></p>
+        </div>
+    </div>
+    <button class="homeButton" onclick="window.location.href='landing_page.html'">
+        Home
+    </button>
+
+  <!-- Link to the external JavaScript -->
+  <script src="calculator.js"></script>
+   
+</body>
+</html>
